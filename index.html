@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        .dealer-container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .car-image {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
+    </style>
+    <title>Concessionnaire de voitures</title>
+</head>
+<body>
+
+    <div class="dealer-container">
+        <img class="car-image" src="bmw.jpg" alt="BMW" onclick="redirect('https://warillon.github.io/bmw')">
+        <img class="car-image" src="vw.jpg" alt="Volkswagen" onclick="redirect('https://warillon.github.io/vw')">
+    </div>
+
+    <script>
+        function redirect(url) {
+            window.location.href = url;
+        }
+    </script>
+
+</body>
+</html>

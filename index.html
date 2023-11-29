@@ -3,6 +3,12 @@
 <head>
     <title>Warillon Cars</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
         .container {
             text-align: center;
         }
@@ -10,12 +16,14 @@
         .car-image {
             width: 300px;
             height: 200px;
-            object-fit: cover; /* New property */
-            transition: transform .2s; /* Animation */
+            object-fit: cover; 
+            transition: transform .2s; 
+            border: 5px solid #333;
+            border-radius: 15px;
         }
 
         .car-image:hover {
-            transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+            transform: scale(1.2); 
         }
     </style>
 </head>

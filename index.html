@@ -19,21 +19,37 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             overflow: hidden;
+            padding: 20px;
+        }
+
+        .car-gallery {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
         }
 
         .car-image {
-            width: 100%;
+            width: 48%;
             height: auto;
             cursor: pointer;
         }
+
+        .dealer-title {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
     </style>
-    <title>Concessionnaire de voitures</title>
+    <title>Warillon Cars</title>
 </head>
 <body>
 
     <div class="dealer-container">
-        <img class="car-image" src="bmw.jpg" alt="BMW" onclick="redirect('https://warillon.github.io/bmw')">
-        <img class="car-image" src="vw.jpg" alt="Volkswagen" onclick="redirect('https://warillon.github.io/vw')">
+        <h1 class="dealer-title">Warillon Cars</h1>
+        <div class="car-gallery">
+            <img class="car-image" src="bmw.jpg" alt="BMW" onclick="redirect('https://warillon.github.io/bmw')">
+            <img class="car-image" src="vw.jpg" alt="Volkswagen" onclick="redirect('https://warillon.github.io/vw')">
+        </div>
     </div>
 
     <script>
